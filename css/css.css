@@ -1,0 +1,258 @@
+* {
+    padding: 0;
+    margin: 0;
+    cursor: default;
+}
+
+html,
+body {
+    background-color: rgba(41, 31, 16, 1);
+    height: 100%;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "main-font";
+    src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "num-font";
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+#block-start {
+    background: linear-gradient(45deg, rgb(102, 90, 26), rgb(177, 159, 108));
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    margin: 300px auto 0 auto;
+    color: #fff;
+    font-size: 32px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "main-font";
+}
+
+
+
+#block-start input[type="text"] {
+    width: 200px;
+    height: 54px;
+    border: 0;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    outline: none;
+    border-radius: 20px;
+    font-weight: 900;
+    padding-left: 20px;
+    font-family: "main-font";
+}
+
+#go { 
+    width: 54px;
+    height: 54px;
+    border-radius: 50px;
+    outline: none;
+    border: 0;
+    background-color: #fff;
+    margin-left: 10px;
+    font-weight: 900;
+}
+#in-go { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#go:hover {
+    background-color: rgba(255, 255, 255, 0.567);
+}
+
+header p {
+    font-family: "main-font";
+    font-size: 36px;
+    margin-right: 10px;
+
+}
+
+header {
+    background: linear-gradient(45deg, rgb(102, 90, 26), rgb(177, 159, 108));
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#game {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+}
+
+
+footer {
+    height: 126px;
+    background: linear-gradient(45deg, rgb(102, 90, 26), rgb(177, 159, 108));
+    margin-top: auto;
+    width: calc(100% - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.koob {
+    width: 64px;
+    height: 64px;
+    margin: 3px;
+    background: url(../img/dr.png);
+    border-radius: 10px;
+    position: relative;
+}
+
+main {
+    width: 1820px;
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    border: 2px solid rgba(236, 232, 14, 0.25);
+    border-radius: 10px;
+}
+
+.stone {
+    background: url(../img/st.png);
+}
+
+.dimond {
+    background: url(../img/dim.png);
+}
+
+#miner{
+    background: url(../img/miner.png);
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    display: block;
+}
+
+.koob0 { 
+    background: none;
+}
+
+.broke { 
+    background: none;
+}
+
+#game_over {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(62 24 0);
+    z-index: 10;
+    left: calc(50% - 300px);
+    top: 250px;
+    border-radius: 20px;
+    align-items: center;
+    font-family: "main-font";
+    font-size: 36px;
+}
+
+#game_over b { 
+    margin-top: 10px;
+}
+
+#restart {
+    width: 300px;
+    height: 50px;
+    background-color: rgb(0 0 0 / 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: rgb(62 24 0);
+}
+
+#restart:hover {
+    color: rgba(255, 0, 0, 0.655);
+}
+
+#info {
+    height: 170px;
+    width: 500px;
+}
+
+#why-die { 
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+#info {
+    font-size: 24px;  
+}
+
+#score {
+    margin-top: 10px;
+}
+
+#game_win{
+    display: none;
+    background-color: rgb(64 86 5);
+    position: absolute;
+    width: 600px;
+    height: 200px;
+    left: calc(50% - 300px);
+    top: 300px;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: "main-font";
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#div_nick { 
+    margin-top: 10px
+}
+
+#div_timer { 
+    margin-top: 10px
+}
+
+#nick_time { 
+    display: flex;
+    font-family: "main-font";
+    align-items: end;
+    margin-bottom: 10px;
+}
+
+#nickname {
+    font-size: 36px;
+}
+
+#nick_time_timer {
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#hoy_dim {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-family: "num-font";
+}
+
+#hoy_dim img{
+    margin-right: 10px;
+}

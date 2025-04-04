@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <!-- Ввод никнейма --> 
+    <div id="block-start">
+        <b>Hello miner!</b>
+        <form id="in-go"><input type="text" name="" id="nick" value="Guest"><input type="button" id="go" value="GO"></form>
+    </div> 
+    
+    <!-- Игровое поле -->
+    <div id="game">
+        <header>
+            <p>Dimond Hund</p><img src="img/image 1.png" alt="best game">
+        </header>
+        <main>
+        </main>
+        <footer>
+            <div id="nick_time">
+                <div><p id="nickname"></p></div>
+                <div><p id="nick_time_timer">00:<span id="timer"></span></p></div>
+            </div>
+            <div id="hoy_dim"><img src="img/dim.png" alt=""><span id="kol_d">0</span>/10</div>
+            
+        </footer>
+    </div>
+    
+    <!-- проигрыш-->
+    <div id="game_over">
+        <b>GAME OVER</b>
+        <div id="info">
+            <p id="why-die"></p>
+            <p id="div_nick">Your nickname: <span id="h_nick"></span></p>
+            <p id="score">Score:<span id="h_dim"></span></p>
+            <p id="div_timer">Time:<span id="h_tim"></span></p>
+        </div>
+        <div id="restart" >RESTART</div>
+    </div>
+
+    <div id="game_win">
+        <b>GAME WIN</b>
+        <p>Good job buddy, you dug up all the diamonds.</p>
+    </div>
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/js.js"></script>
+</body>
+</html>
